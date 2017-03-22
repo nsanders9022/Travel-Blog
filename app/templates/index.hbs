@@ -1,8 +1,10 @@
 <h1>Fantastic Travel Blog</h1>
 
 {{#each model as |post|}}
-  {{post-tile post=post}}
+  {{post-tile post=post destroyPost="destroyPost"}}
 {{/each}}
+
+{{new-post savePost = 'savePost'}}
 
 {{#link-to 'about'}}About Us{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}

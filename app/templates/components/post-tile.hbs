@@ -1,9 +1,10 @@
-<p>{{post.city}} by {{post.name}}</p>
+<h4>{{post.city}} by {{post.name}}</h4>
 {{#if isPostShowing}}
-  <p>{{post.country}}</p>
-  <p>{{post.highlight}}</p>
+  <p>Country: {{post.country}}</p>
+  <p>Highlight of the trip: {{post.highlight}}</p>
   <p {{action 'postHide'}}>{{post.body}}</p>
   <img src={{post.image}} alt="" />
 {{else}}
   <button {{action 'postShow'}}>Show</button>
 {{/if}}
+<button {{action 'delete' post}}>Delete Post</button>

@@ -1,0 +1,40 @@
+{{#if addNewPost}}
+  <h1>New Post</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Author Name</label>
+        {{input value=name id="name"}}
+      </div>
+
+      <div class="form-group">
+        <label for="city">city</label>
+        {{input value=city id="city"}}
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country</label>
+        {{input value=country id="country"}}
+      </div>
+
+      <div class="form-group">
+        <label for="highlight">Highlight of the visit</label>
+        {{input value=highlight id="highlight"}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Your blog post</label>
+        {{input value=body id="body"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button {{action 'savePost'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'postFormShow'}}>New Post</button>
+{{/if}}
