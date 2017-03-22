@@ -5,9 +5,19 @@
   <p>Highlight of the trip: {{post.highlight}}</p>
   <p {{action 'postHide'}}>{{post.body}}</p>
   <img src={{post.image}} alt="" />
+
+  <h2> Tags </h2>
+<ul>
+  {{#each post.tags as |tag|}}
+  Something
+    {{tag-tile tag=tag}}
+  {{/each}}
+  BLIDEHli
+</ul>
 </div>
 {{else}}
   <button class="btn btn-success" {{action 'postShow'}}>Show</button>
 {{/if}}
 {{update-post post=post update="update"}}
+{{new-tag saveTag="saveTag" post=post}}
 <button  class="btn btn-danger" {{action  'delete' post}}>Delete Post</button>

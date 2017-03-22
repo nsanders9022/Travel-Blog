@@ -29,7 +29,11 @@ export default Ember.Route.extend({
     },
     saveTag(params) {
       var newTag = this.store.createRecord('tag', params);
-      newTag.save();
+      var post = params.post;
+      post.get('tags').addObject(newTag);
+      newTag.save().then(function() {
+        return post.save();
+      });
       this.transitionTo('index');
     }
   }

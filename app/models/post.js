@@ -6,5 +6,6 @@ export default DS.Model.extend({
   country: DS.attr(),
   highlight: DS.attr(),
   body: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  tags: DS.hasMany('tag', { async: true})
 });

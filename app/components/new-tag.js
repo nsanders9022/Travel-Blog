@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     saveTag() {
      var params = {
        type: this.get('type'),
+       post: this.get('post')
      };
      this.set('addNewTag', false);
      this.sendAction('saveTag', params);
