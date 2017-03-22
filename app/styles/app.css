@@ -27,3 +27,7 @@ body {
 .button {
   margin-top: 10px;
 }
+
+.post-body {
+  background-color: rgba(108, 145, 160, .64);;
+}
