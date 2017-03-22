@@ -1,23 +1,37 @@
-<h4>{{post.city}} by {{post.name}}</h4>
+<h1>{{post.city}} by {{post.name}}</h1>
 {{#if isPostShowing}}
 <div class="post-body">
-  <p>Country: {{post.country}}</p>
-  <p>Highlight of the trip: {{post.highlight}}</p>
-  <p {{action 'postHide'}}>{{post.body}}</p>
-  <img src={{post.image}} alt="" />
+  <div class="row">
+    <div class="col-md-6">
+      <img src={{post.image}} alt="" />
+    </div>
+    <div class="col-md-6 content">
+      <p><span class="topic-highlight">Country:</span> {{post.country}}</p>
+      <p><span class="topic-highlight">Highlight of the trip:</span> {{post.highlight}}</p>
+      <p {{action 'postHide'}}>{{post.body}}</p>
+    </div>
+  </div>
 
-  <h2> Tags </h2>
+  <!-- <h2> Tags </h2>
 <ul>
   {{#each post.tags as |tag|}}
   Something
     {{tag-tile tag=tag}}
   {{/each}}
   BLIDEHli
-</ul>
+</ul> -->
 </div>
 {{else}}
-  <button class="btn btn-success" {{action 'postShow'}}>Show</button>
+  <button id="show-button" class="btn btn-success" {{action 'postShow'}}>Show</button>
 {{/if}}
-{{update-post post=post update="update"}}
-{{new-tag saveTag="saveTag" post=post}}
-<button  class="btn btn-danger" {{action  'delete' post}}>Delete Post</button>
+<div class="row buttons">
+  <div class="col-md-1">
+    {{update-post post=post update="update"}}
+  </div>
+  <div class="col-md-1">
+    {{new-tag saveTag="saveTag" post=post}}
+  </div>
+  <div class="col-md-1">
+    <button  id="delete-button" class="btn btn-danger" {{action  'delete' post}}>Delete Post</button>
+  </div>
+</div>

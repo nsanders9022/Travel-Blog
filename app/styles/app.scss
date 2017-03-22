@@ -1,0 +1,83 @@
+.navbar {
+  font-size: 40px;
+  background-color: #28074c;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+body {
+  background-image: url("http://www.dicconbewes.com.php56-22.dfw3-1.websitetestlink.com/wp-content/uploads/2010/08/p1020595.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar-right{
+  padding-right: 30px;
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+.nav-home {
+  padding-left: 20px;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+#delete-button {
+  background-color: white;
+  border-color: #1c5f86;
+  border-width: 2px;
+  color: #1c5f86;
+}
+
+#show-button {
+  background-color: white;
+  border-color: #4b1c86;
+  border-width: 2px;
+  color: #4b1c86;
+}
+
+#update-button {
+  background-color: white;
+  border-color: #4b1c86;
+  border-width: 2px;
+  color: #4b1c86;
+}
+
+#new-button {
+  background-color: white;
+  border-color: #4b1c86;
+  border-width: 2px;
+  color: #4b1c86;
+}
+
+#new-tag-button {
+  background-color: white;
+  border-color: #4b1c86;
+  border-width: 2px;
+  color: #4b1c86;
+}
+
+
+.post-body {
+  background-color: rgba(108, 145, 160, .64);
+  padding: 10px;
+  img {
+    width: 100%;
+  }
+  .topic-highlight {
+    font-weight: bold;
+  }
+  .content {
+    height:380px;
+    overflow: auto;
+    font-size: 18px;
+  }
+}
+
+@import "ember-bootstrap/bootstrap";
