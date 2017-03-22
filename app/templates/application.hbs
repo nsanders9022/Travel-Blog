@@ -1,12 +1,13 @@
-<div class= "container">
-  <header class= "jumbotron">
-    <h1>Travel Blog</h1>
-  </header>
-  <p>
-    <!-- nav bar goes here -->
-  </p>
-    {{outlet}}
-  <hr>
-  <footer>
-  </footer>
+<nav class="navbar navbar-default">
+
+  {{#link-to 'index' class="nav-home"}}Puddle Jumpers{{/link-to}}
+  {{#link-to 'about' class="navbar-right"}}About Us{{/link-to}}
+  {{#link-to 'contact' class="navbar-right"}}Contact Us{{/link-to}}
+
+</nav>
+<div class="container">
+  {{outlet}}
 </div>
+<hr>
+<footer>
+</footer>

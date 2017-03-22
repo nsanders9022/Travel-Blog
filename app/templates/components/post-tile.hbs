@@ -5,6 +5,6 @@
   <p {{action 'postHide'}}>{{post.body}}</p>
   <img src={{post.image}} alt="" />
 {{else}}
-  <button {{action 'postShow'}}>Show</button>
+  <button class="btn btn-success" {{action 'postShow'}}>Show</button>
 {{/if}}
-<button {{action 'delete' post}}>Delete Post</button>
+<button  class="btn btn-danger" {{action  'delete' post}}>Delete Post</button>
