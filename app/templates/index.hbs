@@ -1,7 +1,15 @@
 <h1>Fantastic Travel Blog</h1>
 
-{{#each model as |post|}}
+{{#each model.posts as |post|}}
   {{post-tile post=post update="update" destroyPost="destroyPost"}}
 {{/each}}
 
 {{new-post savePost ='savePost'}}
+
+<ul>
+  {{#each model.tags as |tag|}}
+    <li>{{tag.type}}</li>
+    {{/each}}
+</ul>
+
+{{new-tag saveTag="saveTag"}}

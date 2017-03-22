@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('post');
+    return Ember.RSVP.hash({
+      posts: this.store.findAll('post'),
+      tags: this.store.findAll('tag')
+    });
   },
 
   actions: {
@@ -22,6 +25,11 @@ export default Ember.Route.extend({
     },
     destroyPost(post) {
       post.destroyRecord();
+      this.transitionTo('index');
+    },
+    saveTag(params) {
+      var newTag = this.store.createRecord('tag', params);
+      newTag.save();
       this.transitionTo('index');
     }
   }
