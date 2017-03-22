@@ -1,0 +1,23 @@
+{ "posts": [{
+    "name": "Rick Steves",
+    "city": "Barcelona",
+    "country": "Spain",
+    "highlight": "The beaches were fantastic",
+    "body": "Barcelona bubbles with life in its narrow Barri Gòtic alleys, along the pedestrian boulevard called the Ramblas, in the funky bohemian quarter of El Born, and throughout the chic, grid-planned part of town called the Eixample. Barcelona's Old City is made for seeing on foot, full of winding lanes that emerge into secluded squares dotted with palm trees and ringed with cafés and boutiques. The waterfront bristles with life, overlooked by the parklike setting of Montjuïc. Across the city, the architecture is colorful, playful, and unique. In this vibrant city, locals still join hands and dance the sardana in front of the cathedral every weekend. Neighborhood festivals jam the events calendar. The cafés are filled by day, and people crowd the streets at night, pausing to fortify themselves with a perfectly composed bite of seafood and a drink at a tapas bar. Every hidden back lane provides shelter for an array of inviting shops. If you're in the mood to surrender to a city’s charms, let it be in Barcelona.",
+    "image": "http://cache-graphicslib.viator.com/graphicslib/thumbs360x240/2512/SITours/barcelona-modernism-and-gaudi-walking-tour-in-barcelona-168394.jpg"
+  }, {
+    "name": "Mindy Kaling",
+    "city": "Austin, TX",
+    "country": "USA",
+    "highlight": "Formula One Circuit of the Americas",
+    "body": "Austin is the state capital of Texas, an inland city bordering the Hill Country region. Home to the University of Texas flagship campus, Austin is known for its eclectic live-music scene centered around country, blues and rock. Its many parks and lakes are popular for hiking, biking, swimming and boating. South of the city, Formula One's Circuit of the Americas raceway has hosted the United States Grand Prix.",
+    "image": "http://theeverygirl.com/sites/default/files/articles/inlineimages/AUSTIN_KELLY%20RUCKER%20PHOTO-2.jpg"
+  }, {
+    "name": "Rick Steves",
+    "city": "Lima",
+    "country": "Peru",
+    "highlight": "Lots of colors and a busy city",
+    "body": "Lima is the capital and the largest city of Peru. It is located in the valleys of the Chillón, Rímac and Lurín rivers, in the central coastal part of the country, overlooking the Pacific Ocean. Together with the seaport of Callao, it forms a contiguous urban area known as the Lima Metropolitan Area. With a population of almost 10 million, Lima is the most populous metropolitan area of Peru and the second-largest city in the Americas (as defined by 'city proper'), behind São Paulo and before Mexico City. Lima was founded by Spanish conquistador Francisco Pizarro on January 18, 1535, as Ciudad de los Reyes. It became the capital and most important city in the Spanish Viceroyalty of Peru. Following the Peruvian War of Independence, it became the capital of the Republic of Peru. Around one-third of the national population lives in the metropolitan area.",
+    "image": "http://luxurylaunches.com/wp-content/uploads/2016/10/lima-peru-1170x677.jpg"
+  }]
+}
