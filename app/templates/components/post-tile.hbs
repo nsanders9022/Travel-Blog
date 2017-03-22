@@ -9,4 +9,5 @@
 {{else}}
   <button class="btn btn-success" {{action 'postShow'}}>Show</button>
 {{/if}}
+{{update-post post=post update="update"}}
 <button  class="btn btn-danger" {{action  'delete' post}}>Delete Post</button>

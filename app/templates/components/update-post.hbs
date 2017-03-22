@@ -1,0 +1,40 @@
+{{#if updatePostForm}}
+  <h4>Update {{post.owner}}'s {{post.type}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        {{input value=name id="name" placeholder=post.name}}
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        {{input value=city id="city" placeholder=post.city}}
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country</label>
+        {{input value=country id="country" placeholder=post.country}}
+      </div>
+
+      <div class="form-group">
+        <label for="highlight">Highlight of the visit</label>
+        {{input value=post.highlight id="highlight" placeholder=post.highlight}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Your blog post</label>
+        {{input value=body id="body" placeholder=post.body}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image" placeholder=post.image}}
+      </div>
+
+      <button {{action 'update' post}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-warning" {{action 'updatePostForm'}}>Update</button>
+{{/if}}
