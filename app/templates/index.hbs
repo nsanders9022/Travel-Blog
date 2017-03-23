@@ -5,9 +5,9 @@
 {{new-post savePost ='savePost'}}
 
 <ul>
-  {{#each model.tags as |tag|}}
-    <li>{{tag.type}}</li>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.rating}} - {{comment.content}} - by {{comment.author}}</li>
   {{/each}}
 </ul>
 
-{{new-tag saveTag="saveTag" post=model}}
+{{new-comment saveComment="saveComment"}}

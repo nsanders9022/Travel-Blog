@@ -4,7 +4,8 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       posts: this.store.findAll('post'),
-      tags: this.store.findAll('tag')
+      tags: this.store.findAll('tag'),
+      comments: this.store.findAll('comment')
     });
   },
 
@@ -21,6 +22,11 @@ export default Ember.Route.extend({
       newTag.save().then(function() {
         return post.save();
       });
+      this.transitionTo('index');
+    },
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      newComment.save();
       this.transitionTo('index');
     }
   }

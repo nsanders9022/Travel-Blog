@@ -11,6 +11,13 @@
     </div>
   </div>
 
+  <h2> Comments </h2>
+<ul>
+  {{#each post.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+
   <!-- <h2> Tags </h2>
 <ul>
   {{#each post.tags as |tag|}}
