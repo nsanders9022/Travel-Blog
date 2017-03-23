@@ -1,5 +1,5 @@
 {{#each model.posts as |post|}}
-  {{post-tile post=post update="update" destroyPost="destroyPost"}}
+  {{post-tile post=post}}
 {{/each}}
 
 {{new-post savePost ='savePost'}}
@@ -7,7 +7,7 @@
 <ul>
   {{#each model.tags as |tag|}}
     <li>{{tag.type}}</li>
-    {{/each}}
+  {{/each}}
 </ul>
 
 {{new-tag saveTag="saveTag" post=model}}

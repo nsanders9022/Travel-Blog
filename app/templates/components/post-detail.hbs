@@ -1,9 +1,8 @@
-<h1>{{#link-to 'post' post.id}}{{post.city}} by {{post.name}}{{/link-to}}</h1>
-{{#if isPostShowing}}
+<h1>{{post.city}} by {{post.name}}</h1>
 <div class="post-body">
   <div class="row">
     <div class="col-md-6">
-      <img {{action 'postHide'}} src={{post.image}} alt="" />
+      <img src={{post.image}} alt="" />
     </div>
     <div class="col-md-6 content">
       <p><span class="topic-highlight">Country:</span> {{post.country}}</p>
@@ -21,6 +20,15 @@
   BLIDEHli
 </ul> -->
 </div>
-{{else}}
-  <button id="show-button" class="btn btn-success" {{action 'postShow'}}>Show</button>
-{{/if}}
+
+<div class="row buttons">
+  <div class="col-md-1">
+    {{update-post post=post update="update"}}
+  </div>
+  <div class="col-md-1">
+    {{new-tag saveTag="saveTag" post=post}}
+  </div>
+  <div class="col-md-1">
+    <button  id="delete-button" class="btn btn-danger" {{action  'delete' post}}>Delete Post</button>
+  </div>
+</div>
