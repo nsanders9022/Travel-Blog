@@ -7,6 +7,15 @@ export default Ember.Component.extend({
         this.sendAction('destroyPost', post);
       }
     },
+    update(comment, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          comment.set(key,params[key]);
+        }
+      });
+      comment.save();
+      this.transitionTo('post-detail');
+    },
     saveComment(params) {
       var newComment = this.store.createRecord('comment', params);
       newComment.save();
