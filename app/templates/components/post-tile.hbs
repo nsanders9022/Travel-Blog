@@ -1,7 +1,7 @@
 <h1>{{#link-to 'post' post.id}}{{post.city}} by {{post.name}}{{/link-to}}</h1>
 <div class="post-body">
     <div class="col-md-6">
-      <img {{action 'postHide'}} src={{post.image}} alt="" />
+      {{#link-to 'post' post.id}}<img {{action 'postHide'}} src={{post.image}} alt="" />{{/link-to}}
     </div>
 
 </div>
