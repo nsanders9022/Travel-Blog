@@ -4,15 +4,15 @@
     <form>
       <div class="form-group">
         <label for="author">Author</label>
-        {{input value=author id="author"}}
+        {{input value=author id="author" class="form-control"}}
       </div>
       <div class="form-group">
         <label for="rating">Rating</label>
-        {{input value=rating id="rating"}}
+        {{input value=rating id="rating" class="form-control"}}
       </div>
       <div class="form-group">
         <label for="content">Content</label>
-        {{input value=content id="content"}}
+        {{input value=content id="content" class="form-control"}}
       </div>
       <button {{action 'saveComment'}}>Save</button>
     </form>

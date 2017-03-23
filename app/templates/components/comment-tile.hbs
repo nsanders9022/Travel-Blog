@@ -1,4 +1,10 @@
-<li>{{comment.rating}} - {{comment.content}} - by {{comment.author}}</li>
-{{update-comment comment=comment update="update"}}
 
-<button class="btn" {{action 'delete' comment}}>Delete Comment</button>
+<li>{{comment.rating}} - {{comment.content}} - by {{comment.author}}</li>
+<div class="row">
+  <div class="col-md-3">
+    <button class="btn" {{action 'delete' comment}}>Delete Comment</button>
+  </div>
+  <div class="col-md-9">
+    {{update-comment comment=comment update="update"}}
+  </div>
+</div>
