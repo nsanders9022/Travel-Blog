@@ -1,7 +1,30 @@
+$oswald: 'Oswald', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$dosis: 'Dosis', sans-serif;
+$delius: 'Delius Unicase', cursive;
+$clicker: 'Clicker Script', cursive;
+
 .navbar {
-  font-size: 40px;
-  background-color: #28074c;
+  font-size: 70px;
   color: white;
+}
+
+#navigation {
+  background-color: #4b1c86;
+  border-color: #4b1c86;
+  border-radius: 0;
+  height: 100px;
+  padding-top: 16px;
+}
+
+.links {
+  color: white;
+  padding-top: 40px;
+  font-family: $clicker;
+}
+
+.puddle {
+  padding-top: 5px;
 }
 
 a {
