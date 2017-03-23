@@ -1,15 +1,7 @@
-<h1>{{#link-to 'post' post.id}}{{post.city}} by {{post.name}}{{/link-to}}</h1>
 <div class="post-body">
     <div class="col-md-6">
+      <h1>{{#link-to 'post' post.id}}{{post.city}} by {{post.name}}{{/link-to}}</h1>
 
-      {{#link-to 'post' post.id}}<img {{action 'postHide'}} src={{post.image}} alt="" />{{/link-to}}
+      {{#link-to 'post' post.id}}<img {{action 'postHide'}} src={{post.image}} alt="" /><figcaption><span class="topic-highlight">Country:</span> {{post.country}}, <span class="topic-highlight">Highlight of the trip: {{post.highlight}}</span></figcaption>{{/link-to}}
     </div>
-
-</div>
-  <div class="post-body">
-    <div class="col-md-6 content">
-      <p><span class="topic-highlight">Country:</span> {{post.country}}</p>
-      <p><span class="topic-highlight">Highlight of the trip:</span> {{post.highlight}}</p>
-    </div>
-
 </div>
