@@ -1,20 +1,14 @@
 <h1>{{#link-to 'post' post.id}}{{post.city}} by {{post.name}}{{/link-to}}</h1>
 <div class="post-body">
     <div class="col-md-6">
-      <img {{action 'postHide'}} src={{post.image}} alt="" />
+      {{#link-to 'post' post.id}}<img src={{post.image}} alt="" />
     </div>
 
 </div>
-    {{#if isPostShowing}}
   <div class="post-body">
     <div class="col-md-6 content">
       <p><span class="topic-highlight">Country:</span> {{post.country}}</p>
       <p><span class="topic-highlight">Highlight of the trip:</span> {{post.highlight}}</p>
-      <p {{action 'postHide'}}>{{post.body}}</p>
     </div>
 
 </div>
-
-{{else}}
-  <button id="show-button" class="btn btn-success" {{action 'postShow'}}>Show</button>
-{{/if}}
