@@ -1,23 +1,37 @@
-{{#each model.posts as |post|}}
+<div class="row">
+  {{#each model.posts as |post|}}
   {{post-tile post=post}}
-{{/each}}
-
-{{new-post savePost ='savePost'}}
-
-<ul>
-  {{#each model.comments as |comment|}}
-    <li>{{comment.rating}} - {{comment.content}} - by {{comment.author}}</li>
   {{/each}}
-</ul>
+</div>
 
-{{new-comment saveComment="saveComment"}}
 
-<h2> All Tags </h2>
+<div class="row content-spacing">
 
-<ul>
-  {{#each model.tags as |tag|}}
-    <li>{{tag.type}}</li>
-  {{/each}}
-</ul>
+  {{new-post savePost ='savePost'}}
+</div>
+<div class="row">
+  <div class="col-md-6">
 
-{{new-tag saveTag="saveTag"}}
+    <ul>
+      {{#each model.comments as |comment|}}
+      <li>{{comment.rating}} - {{comment.content}} - by {{comment.author}}</li>
+      {{/each}}
+    </ul>
+
+    {{new-comment saveComment="saveComment"}}
+  </div>
+  <div class="col-md-6">
+
+
+    <h2> All Tags </h2>
+
+    <ul>
+      {{#each model.tags as |tag|}}
+      <li>{{tag.type}}</li>
+      {{/each}}
+    </ul>
+
+    {{new-tag saveTag="saveTag"}}
+
+  </div>
+</div>
