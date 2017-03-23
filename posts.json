@@ -28,5 +28,10 @@
     "author": "Alex",
     "rating": 9,
     "content": "Nice view of the volcano!"
+  }],
+  "tags": [{
+    "type": "food"
+  }, {
+    "type": "activities"
   }]
 }

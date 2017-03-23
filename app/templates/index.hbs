@@ -11,3 +11,13 @@
 </ul>
 
 {{new-comment saveComment="saveComment"}}
+
+<h2> All Tags </h2>
+
+<ul>
+  {{#each model.tags as |tag|}}
+    <li>{{tag.type}}</li>
+  {{/each}}
+</ul>
+
+{{new-tag saveTag="saveTag"}}

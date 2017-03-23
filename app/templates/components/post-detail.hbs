@@ -12,20 +12,18 @@
   </div>
 
   <h2> Comments </h2>
-<ul>
-  {{#each post.comments as |comment|}}
+  <ul>
+    {{#each post.comments as |comment|}}
     {{comment-tile comment=comment}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 
-  <!-- <h2> Tags </h2>
-<ul>
-  {{#each post.tags as |tag|}}
-  Something
+  <h2> Tags </h2>
+  <ul>
+    {{#each post.tags as |tag|}}
     {{tag-tile tag=tag}}
-  {{/each}}
-  BLIDEHli
-</ul> -->
+    {{/each}}
+  </ul>
 </div>
 
 <div class="row buttons">
