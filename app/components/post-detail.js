@@ -20,6 +20,9 @@ export default Ember.Component.extend({
       var newComment = this.store.createRecord('comment', params);
       newComment.save();
       this.transitionTo('post-detail');
+    },
+    destroyComment(comment) {
+      this.sendAction('destroyComment', comment);
     }
   }
 });
