@@ -21,7 +21,7 @@
   <h2> Tags </h2>
   <ul>
     {{#each post.tags as |tag|}}
-    {{tag-tile tag=tag}}
+    {{tag-tile tag=tag destroyTag="destroyTag"}}
     {{/each}}
   </ul>
 </div>

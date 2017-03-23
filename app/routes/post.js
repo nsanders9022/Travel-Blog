@@ -18,7 +18,13 @@ export default Ember.Route.extend({
       var comment_deletions = post.get('comments').map(function(comment) {
         return comment.destroyRecord();
       });
+      var tag_deletions = post.get('tags').map(function(tag) {
+        return tag.destroyRecord();
+      });
       Ember.RSVP.all(comment_deletions).then(function() {
+        return post.destroyRecord();
+      });
+      Ember.RSVP.all(tag_deletions).then(function() {
         return post.destroyRecord();
       });
       this.transitionTo('index');
@@ -44,6 +50,10 @@ export default Ember.Route.extend({
         return post.save();
       });
       this.transitionTo('post', post);
+    },
+    destroyTag(tag) {
+      tag.destroyRecord();
+      this.transitionTo('post-detail');
     }
  }
 });

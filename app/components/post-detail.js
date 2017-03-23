@@ -23,6 +23,9 @@ export default Ember.Component.extend({
     },
     destroyComment(comment) {
       this.sendAction('destroyComment', comment);
+    },
+    destroyTag(tag) {
+      this.sendAction('destroyTag', tag);
     }
   }
 });
