@@ -1,7 +1,6 @@
 # travel-blog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This program displays travel blogs with posts, tags, and comments.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone this repository`
 * `cd travel-blog`
 * `npm install`
 * `bower install`
